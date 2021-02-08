@@ -1,4 +1,4 @@
--vue-mini-reactive
+- vue-mini-reactive
 	/ index.html   // 入口 HTML 文件
   / index.js     // 入口 JS 文件
   / observer.js  // 实现响应式，将数据转换为响应式对象
