@@ -1,3 +1,4 @@
+// 将普通数据转化为相应是数据 Object.defineProperty(obj,por,descript)
 class Observer {
   constructor (data) {
       this.data = data;
@@ -21,6 +22,7 @@ class Observer {
           configurable: true,
           get () {
               console.log('[getter]方法执行')
+              console.log('Dep.target',Dep.target)
               Dep.target &&  dep.addSub(Dep.target);
               return value
           },

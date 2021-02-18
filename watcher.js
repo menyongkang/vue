@@ -1,4 +1,7 @@
-// 被观察者
+/*
+  观察者模式核心组成包括：n 个观察者和 1 个被观察者。这里实现一个简单观察者模式：
+**/
+// 被观察者类，用来生成被观察者
 class Dep {
   constructor() {
       this.subs = [];
@@ -11,7 +14,7 @@ class Dep {
   }
 }
 
-// 观察者
+// 观察者类，用来生成观察者
 class Watcher {
   constructor (vm, key, cb) {
       this.vm = vm;   // vm：表示当前实例
